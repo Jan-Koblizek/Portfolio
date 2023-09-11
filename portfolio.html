@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="portfolio.css">
+        <script src="portfolio.js"></script>
+    </head>
+    <body>
+        <h1>Portfolio</h1>
+        <div id="overlay"></div> 
+        <div class="card-table">
+            <div class="card">
+                <table>
+                    <tr>
+                        <td class="card-header">
+                            <h2>RTS Pathfinding</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                                <source src="RFG.mp4#t=5" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+                <div class="popup">
+                    <h2>RTS Pathfinding</h2>
+                    <a class="close" onclick="hideInfo();">&times;</a>
+                    <div class="content">
+                        Thanks for popping me out of that button, but now i'm done so you can close this window.
+                    </div>
+                </div>
+                <div class="info" onclick="displayInfo(this.parentNode);">
+                    i
+                </div> 
+            </div>
+
+            <div class="card">
+                <table>
+                    <tr>
+                        <td class="card-header">
+                            <h2>Volumetric Clouds</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                                <source src="VolumetricClouds.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </table>   
+            </div>
+
+
+            <div class="card">
+                <table>
+                    <tr>
+                        <td class="card-header">
+                            <h2>Mesopotamia</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                                <source src="Mesopotamia.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </table>   
+            </div>
+        </div>
+
+
+        <h1>Smaller Or Unfinished Projects</h1>
+        <div class="card-table">
+            <div class="card">
+                <table>
+                    <tr>
+                        <td class="card-header">
+                            <h2>Conspiracy Madness</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                                <source src="conspiracyMadness.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </table>   
+            </div>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td class="card-header">
+                            <h2>Floating River</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                                <source src="UnityRiverShader2.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <table>
+                    <tr>
+                        <td class="card-header">
+                            <h2>Martian Defense</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                                <source src="Martians.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
