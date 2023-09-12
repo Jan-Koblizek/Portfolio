@@ -188,15 +188,33 @@ h2 {
     overflow: auto;
 }
 
+.icons 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.technology {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
 .technology-icon {
-    /*background-color: gray;*/
     margin: 10px 0px 0px 0px;
-    /*width: 32px;*/
     height: 32px;
-    /*
-    box-shadow: 0px 0px 10px black;
-    border-radius: 2px;
-    */
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.link-icon {
+    margin: 10px 0px 0px 0px;
+    height: 32px;
 }
   
 @media screen and (max-width: 700px){
