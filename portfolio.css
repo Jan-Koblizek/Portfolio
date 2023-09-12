@@ -150,7 +150,7 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70vw;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     border-radius: var(--card-corner-radius);
     font-family: var(--text-font);
     transition: all 500ms ease-in-out;
@@ -161,6 +161,7 @@ h2 {
 {
     margin-top: 0;
     text-align: left;
+    margin-right: 80px;
 }
 
 .popup .close 
@@ -178,13 +179,24 @@ h2 {
 
 .popup .close:hover 
 {
-    color: #06D85F;
+    color: var(--highlight-color);
 }
 
 .popup .content 
 {
     max-height: 30%;
     overflow: auto;
+}
+
+.technology-icon {
+    /*background-color: gray;*/
+    margin: 10px 0px 0px 0px;
+    /*width: 32px;*/
+    height: 32px;
+    /*
+    box-shadow: 0px 0px 10px black;
+    border-radius: 2px;
+    */
 }
   
 @media screen and (max-width: 700px){
