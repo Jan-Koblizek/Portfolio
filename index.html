@@ -22,28 +22,31 @@
                         </td>
                     </tr>
                 </table>
-                <div class="popup">
-                    <h2>RTS Pathfinding</h2>
-                    <a class="close" onclick="hideInfo();">&times;</a>
-                    <div class="content">
-                        <p>
-                            The navigation of groups of units in real time strategy games (RTS) was the topic of my master's thesis.
-                            My algorithm created a flow network over the map and found alternative paths for the subgroups of units in there.
-                            This enabled it to more effectively utilize alternative paths.
-                        </p>
-
-                        <p>
-                            The algorithm was implemented using C# and the Unity game engine. I created a testing environment, where the 
-                            algorithm can be quickly run on different maps and compared against alternative algorithms.
-                        </p>
-                    </div>
-                    <img src="icons/CSharp.svg" class="technology-icon">
-                    <img src="icons/Unity.svg" class="technology-icon">
-                </div>
-                <div class="info" onclick="displayInfo(this.parentNode);">
+                <div class="info" onclick="displayInfo(this.parentNode, 'PathfindingPopup');">
                     i
                 </div> 
             </div>
+
+            <div class="popup" id="PathfindingPopup">
+                <h2>RTS Pathfinding</h2>
+                <a class="close" onclick="hideInfo();">&times;</a>
+                <div class="content">
+                    <p>
+                        The navigation of groups of units in real time strategy games (RTS) was the topic of my master's thesis.
+                        My algorithm created a flow network over the map and found alternative paths for the subgroups of units in there.
+                        This enabled it to more effectively utilize alternative paths.
+                    </p>
+
+                    <p>
+                        The algorithm was implemented using C# and the Unity game engine. I created a testing environment, where the 
+                        algorithm can be quickly run on different maps and compared against alternative algorithms.
+                    </p>
+                </div>
+                <img src="icons/CSharp.svg" class="technology-icon">
+                <img src="icons/Unity.svg" class="technology-icon">
+            </div>
+
+
 
             <div class="card">
                 <table>

@@ -8,11 +8,11 @@ function removeBackgroundBlur() {
     document.getElementById("overlay").style.opacity = 0;
 }
 
-function displayInfo(card) {
+function displayInfo(card, popupID) {
     blurAndDarkenBackground();
-    var popups = card.querySelectorAll('.popup');
-    popups[0].style.visibility = "visible";
-    popups[0].style.opacity = 1;
+    var popup = document.getElementById(popupID);
+    popup.style.visibility = "visible";
+    popup.style.opacity = 1;
 }
 
 function hideInfo() {
