@@ -99,6 +99,14 @@ h2 {
     border-radius: 0px 0px var(--card-corner-radius) var(--card-corner-radius);
 }
 
+.card table img {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    border-radius: 0px 0px var(--card-corner-radius) var(--card-corner-radius);
+}
+
 .card-header {
     background-color: var(--lighter-background-color);
     border-radius: var(--card-corner-radius) var(--card-corner-radius) 0px 0px;
