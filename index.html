@@ -2,10 +2,11 @@
     <head>
         <link rel="stylesheet" href="portfolio.css">
         <script src="portfolio.js"></script>
+        <script src="gallery.js"></script>
     </head>
     <body>
         <h1>Portfolio</h1>
-        <div id="overlay"></div> 
+        <div id="overlay" onclick="hideInfo();"></div> 
         <div class="card-table">
             <div class="card">
                 <table>
@@ -16,23 +17,46 @@
                     </tr>
                     <tr>
                         <td>
-                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop controls>
                                 <source src="RFG.mp4#t=5" type="video/mp4">
                             </video>
                         </td>
                     </tr>
                 </table>
-                <div class="popup">
-                    <h2>RTS Pathfinding</h2>
-                    <a class="close" onclick="hideInfo();">&times;</a>
-                    <div class="content">
-                        Thanks for popping me out of that button, but now i'm done so you can close this window.
+                <div class="info" onclick="displayInfo(this.parentNode, 'PathfindingPopup');">
+                    i
+                </div>
+            </div>
+
+            <div class="popup" id="PathfindingPopup">
+                <h2>RTS Pathfinding</h2>
+                <a class="close" onclick="hideInfo();">&times;</a>
+                <div class="content">
+                    <p>
+                        The navigation of groups of units in real time strategy games (RTS) was the topic of my master's thesis.
+                        My algorithm created a flow network over the map and found alternative paths for the subgroups of units in there.
+                        This enabled it to more effectively utilize alternative paths.
+                    </p>
+
+                    <p>
+                        The algorithm was implemented using C# and the Unity game engine. I created a testing environment, where the 
+                        algorithm can be quickly run on different maps and compared against alternative algorithms.
+                    </p>
+                </div>
+                <div class="icons">
+                    <div class="technology">
+                        <img src="icons/CSharp.svg" class="technology-icon">
+                        <img src="icons/Unity.svg" class="technology-icon">
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/Jan-Koblizek/Pathfinding" target="_blank">
+                            <img src="icons/Github.svg" class="link-icon">
+                        </a>
                     </div>
                 </div>
-                <div class="info" onclick="displayInfo(this.parentNode);">
-                    i
-                </div> 
             </div>
+
+
 
             <div class="card">
                 <table>
@@ -43,7 +67,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop controls>
                                 <source src="VolumetricClouds.mp4" type="video/mp4">
                             </video>
                         </td>
@@ -61,7 +85,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop controls>
                                 <source src="Mesopotamia.mp4" type="video/mp4">
                             </video>
                         </td>
@@ -82,12 +106,23 @@
                     </tr>
                     <tr>
                         <td>
-                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop controls>
                                 <source src="conspiracyMadness.mp4" type="video/mp4">
                             </video>
                         </td>
                     </tr>
-                </table>   
+                </table>
+                <div class="info" onclick="displayInfo(this.parentNode, 'PathfindingPopup');">
+                    i
+                </div>
+                <div class="gallery"
+                    data-galleryImages="img/ConspiracyGay.jpg;img/ConspiracyCharles.jpg;img/Conspiracy5G.jpg;img/Conspiracy5G2.jpg;img/ConspiracyObama.jpg"
+                    onclick="showSlide(1, this);">
+                    <svg viewBox="-2 -2 28 28">
+                        <path d="M19.363,2.38H4.637A2.259,2.259,0,0,0,2.38,4.637V19.363A2.259,2.259,0,0,0,4.637,21.62H19.363a2.259,2.259,0,0,0,2.257-2.257V4.637A2.259,2.259,0,0,0,19.363,2.38Zm1.226,16.983a1.227,1.227,0,0,1-1.226,1.226H4.637a1.227,1.227,0,0,1-1.226-1.226V17.739H20.589Zm0-2.654H3.411V4.637A1.227,1.227,0,0,1,4.637,3.411H19.363a1.227,1.227,0,0,1,1.226,1.226Z"/><path d="M15.413,8.111a.516.516,0,0,0-.791-.078l-3.011,2.984L9.381,9.283a.514.514,0,0,0-.7.064L4.9,13.6a.516.516,0,0,0,.771.685l3.46-3.891,2.206,1.716a.514.514,0,0,0,.679-.041L14.906,9.2l3.383,5.025a.515.515,0,1,0,.855-.576Z"/>
+                        <path d="M12,8.574A1.976,1.976,0,1,0,10.024,6.6,1.978,1.978,0,0,0,12,8.574Zm0-2.92a.945.945,0,1,1-.945.944A.945.945,0,0,1,12,5.654Z"/>
+                    </svg>
+                </div> 
             </div>
             <div class="card">
                 <table>
@@ -98,7 +133,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop controls>
                                 <source src="UnityRiverShader2.mp4" type="video/mp4">
                             </video>
                         </td>
@@ -115,7 +150,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop>
+                            <video onmouseover="this.play()" onmouseout="this.pause();" muted loop controls>
                                 <source src="Martians.mp4" type="video/mp4">
                             </video>
                         </td>
@@ -123,5 +158,21 @@
                 </table>
             </div>
         </div>
+
+
+        <div id="gallery-modal" class="gallery-modal">
+            <div class="gallery-content">
+                <span class="gallery-close" onclick="closeModal();">&times;</span>                
+                
+                <div class="gallery-item">
+                    <img src="img/ConspiracyObama.jpg" class="gallery-image">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+
     </body>
 </html>
