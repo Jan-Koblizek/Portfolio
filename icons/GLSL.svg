@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="56mm"
+   height="24mm"
+   viewBox="0 0 56 24"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="GLSL.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="2.9006173"
+     inkscape:cx="129.79996"
+     inkscape:cy="61.538625"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1839"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <rect
+       x="-0.34475419"
+       y="0.34475419"
+       width="240.9832"
+       height="114.11365"
+       id="rect248" />
+    <rect
+       x="7.9293466"
+       y="54.815918"
+       width="233.39861"
+       height="185.47775"
+       id="rect236" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text234"
+       style="font-weight:bold;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;white-space:pre;shape-inside:url(#rect236);display:inline;fill:#ffffff;stroke:#001445;stroke-width:0;stroke-linecap:round" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-4.652027,-2.0979728)"
+       id="text246"
+       style="font-weight:bold;font-size:96px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;white-space:pre;shape-inside:url(#rect248);shape-padding:0.344754;display:inline;fill:#ffffff;stroke:#001445;stroke-width:0;stroke-linecap:round"><tspan
+         x="27.451172"
+         y="88.037471"
+         id="tspan5544"><tspan
+           style="font-weight:normal;font-family:Calibri;-inkscape-font-specification:Calibri;fill:#1210ff"
+           id="tspan5542">GLSL</tspan></tspan></text>
+  </g>
+</svg>

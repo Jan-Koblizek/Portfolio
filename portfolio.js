@@ -8,7 +8,7 @@ function removeBackgroundBlur() {
     document.getElementById("overlay").style.opacity = 0;
 }
 
-function displayInfo(card, popupID) {
+function displayInfo(popupID) {
     blurAndDarkenBackground();
     var popup = document.getElementById(popupID);
     popup.style.visibility = "visible";

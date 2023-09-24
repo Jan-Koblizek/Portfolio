@@ -3,7 +3,9 @@
 :root {
     --background-color: #121229;
     --lighter-background-color: #343449;
+    --lightest-background-color: #8989A7;
     --highlight-color: #00aede;
+    --secondary-color: #FAC748;
 
 
     --text-color: white;
@@ -18,6 +20,22 @@ body {
     background-color: var(--background-color);
 }
 
+p {
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+a {
+    font-family: var(--text-font);
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
 h1 {
     color: var(--text-color);
     font-size: 48px;
@@ -29,6 +47,27 @@ h1 {
     /*-webkit-box-reflect: below -20px linear-gradient(to top, rgba(0, 0, 0, .35), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);*/
 }
 
+/*
+h1::before {
+    content: "";
+    position: relative;
+    right: 50px;
+    height: 48px;
+    padding-left: 5000px;
+    margin-left: -5000px;
+    background-color: var(--secondary-color);
+}
+
+h1::after {
+    content: "";
+    position: relative;
+    left: 50px;
+    height: 48px;
+    padding-left: 5000px;
+    margin-right: -5000px;
+    background-color: var(--secondary-color);
+}
+*/
 
 h2 {
     color: var(--text-color);
@@ -58,51 +97,92 @@ h2 {
     flex-basis: 600px;
     margin: 25px;
     width: 600px;
-    height: 388px;
-    /*aspect-ratio: 3/2;*/
     border-radius: var(--card-corner-radius);
-    /*background-color: var(--lighter-background-color);*/
     padding: 0px;
-    /*-webkit-box-reflect: below 5px linear-gradient(to top, rgba(0, 0, 0, .35), rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0) 10%);*/
 }
+
 .card:hover {
-    animation-name: cardHoverAnimation;
+    animation-name: cardHoverAnimationPosition;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
-@keyframes cardHoverAnimation {
+@keyframes cardHoverAnimationPosition {
+    from { 
+        top: 0px;
+    }
+    to {  
+        top: -10px;
+    }
+}
+
+.card:hover > table {
+    animation-name: cardHoverAnimationShadow;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes cardHoverAnimationShadow {
     from {
         box-shadow: 0px 0px 0px var(--highlight-color);    
-        top: 0px;
     }
     to {
         box-shadow: 0px 0px 15px var(--highlight-color);    
-        top: -10px;
     }
-  }
+}
 
 .card > table {
     width: 100%;
     border-radius: var(--card-corner-radius);
-    height: 100%;
+    padding: 0px;
+    margin: 2px;
+    border-width: 0px;
+    border-spacing: 0px;
+    border-radius: 0px 0px var(--card-corner-radius) var(--card-corner-radius);
+    border-top: 2px solid var(--secondary-color);
+    /*border-bottom: 2px solid var(--secondary-color);*/
+}
+
+tr
+{
     padding: 0px;
     margin: 0px;
-    border-spacing: 0px;
+    border-radius: 0px 0px var(--card-corner-radius) var(--card-corner-radius);
+}
 
+td
+{
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px 0px var(--card-corner-radius) var(--card-corner-radius);
 }
 
 .card video {
-    position: absolute;
-    top: 50px;
+    position: relative;
+    top: 0px;
     left: 0px;
+    margin-bottom: -4px;
+    width: 100%;
+    border-radius: 0px 0px var(--card-corner-radius) var(--card-corner-radius);
+}
+
+.card table img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-bottom: -4px;
     width: 100%;
     border-radius: 0px 0px var(--card-corner-radius) var(--card-corner-radius);
 }
 
 .card-header {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    min-height: 50px;
     background-color: var(--lighter-background-color);
     border-radius: var(--card-corner-radius) var(--card-corner-radius) 0px 0px;
-    height: 40px;
+    z-index: 1;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .info {
@@ -110,14 +190,15 @@ h2 {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 50px;
-    right: 0px;
+    top: 54px;
+    right: -2px;
     border-radius: 0px 0px 5px 5px;
-    background-color: var(--lighter-background-color);
+    background-color: var(--highlight-color);
     text-align: center;
     vertical-align: middle;
     font-size: 42px;
     color: var(--text-color);
+    box-shadow: 0px 0px 10px black;
 }
 
 .info:hover {
@@ -136,7 +217,7 @@ h2 {
     opacity: 0;
     backdrop-filter: contrast(50%) blur(5px) brightness(20%);
     transition: all 1s ease-in-out;
-    z-index: 1;
+    z-index: 9;
 }
   
 .popup {
@@ -153,7 +234,7 @@ h2 {
     border-radius: var(--card-corner-radius);
     font-family: var(--text-font);
     transition: all 500ms ease-in-out;
-    z-index: 1;
+    z-index: 10;
   }
   
 .popup h2 
@@ -198,10 +279,11 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
+    padding: 4px;
 }
 
 .technology-icon {
-    margin: 10px 0px 0px 0px;
+    margin: 10px 10px 0px 0px;
     height: 32px;
 }
 
@@ -211,8 +293,24 @@ h2 {
     justify-content: left;
 }
 
+.link {
+    background-color: var(--lightest-background-color);
+    padding: 0px;
+    height: 40px;
+    width: 40px;
+    margin: 10px 10px 0px 0px;
+    border-radius: 50%;
+}
+
+.link:hover {
+    background-color: var(--secondary-color);
+}
+
 .link-icon {
-    margin: 10px 0px 0px 0px;
+    display: block;
+    position: relative;
+    top: 4px;
+    margin: auto;
     height: 32px;
 }
   
@@ -228,10 +326,11 @@ h2 {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 50px;
-    right: 55px;
-    background-color: var(--lighter-background-color);
+    top: 54px;
+    right: 53px;
+    background-color: var(--secondary-color);
     border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 0px 10px black;
 }
 
 .gallery:hover {
@@ -261,7 +360,7 @@ h2 {
 .gallery-modal {
     display: none;
     position: fixed;
-    z-index: 100000;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
