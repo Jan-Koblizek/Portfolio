@@ -19,6 +19,22 @@ body {
     background-color: var(--background-color);
 }
 
+p {
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+a {
+    font-family: var(--text-font);
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
 h1 {
     color: var(--text-color);
     font-size: 48px;
@@ -200,7 +216,7 @@ td
     opacity: 0;
     backdrop-filter: contrast(50%) blur(5px) brightness(20%);
     transition: all 1s ease-in-out;
-    z-index: 1;
+    z-index: 9;
 }
   
 .popup {
@@ -217,7 +233,7 @@ td
     border-radius: var(--card-corner-radius);
     font-family: var(--text-font);
     transition: all 500ms ease-in-out;
-    z-index: 1;
+    z-index: 10;
   }
   
 .popup h2 
@@ -265,7 +281,7 @@ td
 }
 
 .technology-icon {
-    margin: 10px 0px 0px 0px;
+    margin: 10px 10px 0px 0px;
     height: 32px;
 }
 
@@ -276,7 +292,7 @@ td
 }
 
 .link-icon {
-    margin: 10px 0px 0px 0px;
+    margin: 10px 10px 0px 0px;
     height: 32px;
 }
   
@@ -326,7 +342,7 @@ td
 .gallery-modal {
     display: none;
     position: fixed;
-    z-index: 100000;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;

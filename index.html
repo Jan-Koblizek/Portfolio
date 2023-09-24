@@ -83,24 +83,31 @@
                 <a class="close" onclick="hideInfo();">&times;</a>
                 <div class="content">
                     <p>
-                        The navigation of groups of units in real time strategy games (RTS) was the topic of my master's thesis.
-                        My algorithm created a flow network over the map and found alternative paths for the subgroups of units in there.
-                        This enabled it to more effectively utilize alternative paths.
+                        I chose real-time volumetric cloud rendering as the topic of my bachelor's thesis. 
+                        The clouds are modeled using Worley and Perlin 3D noise textures. 
+                        These are combined together, and each provides a different level of detail. 
+                        The position of the clouds in the sky is described by a 2D cloud map.
                     </p>
-
-                    <p>
-                        The algorithm was implemented using C# and the Unity game engine. I created a testing environment, where the 
-                        algorithm can be quickly run on different maps and compared against alternative algorithms.
+                    <p>  
+                        The clouds are rendered using ray-marching. 
+                        The self-shadowing and the Heneye-Greenstein phase function are computed at each step. 
+                        The clouds are rendered as a projection onto the sky dome (this means that the player cannot fly through them). 
+                        To get faster performance, only a part of the pixels is updated for each frame, 
+                        while others are reused from previous frames (via temporal reprojection).
                     </p>
                 </div>
                 <div class="icons">
                     <div class="technology">
                         <img src="icons/CSharp.svg" class="technology-icon">
                         <img src="icons/Unity.svg" class="technology-icon">
+                        <img src="icons/HLSL.svg" class="technology-icon">
                     </div>
                     <div class="links">
-                        <a href="https://github.com/Jan-Koblizek/Pathfinding" target="_blank">
+                        <a href="https://github.com/Jan-Koblizek/clouds" target="_blank">
                             <img src="icons/Github.svg" class="link-icon">
+                        </a>
+                        <a href="https://dspace.cuni.cz/handle/20.500.11956/121026" target="_blank">
+                            <img src="icons/University.svg" class="link-icon">
                         </a>
                     </div>
                 </div>
@@ -140,24 +147,36 @@
                 <a class="close" onclick="hideInfo();">&times;</a>
                 <div class="content">
                     <p>
-                        The navigation of groups of units in real time strategy games (RTS) was the topic of my master's thesis.
-                        My algorithm created a flow network over the map and found alternative paths for the subgroups of units in there.
-                        This enabled it to more effectively utilize alternative paths.
+                        The Magical Pet Shop is a shop tycoon in which you craft unique magical animals, 
+                        send them on expeditions, make a lot of money, and unlock new content!
+                        Crafting is divided into several trees, like water, power, fire, and so on.
+                        The deeper in the tree, the more powerful the animal it is.
+                        You will need not just basic resources such as essences but also rare artifacts.
+                        Such animals will truly have unique and unexpected appearances, possess arcane abilities,
+                        and together make mighty combinations.
                     </p>
 
                     <p>
-                        The algorithm was implemented using C# and the Unity game engine. I created a testing environment, where the 
-                        algorithm can be quickly run on different maps and compared against alternative algorithms.
+                        I developed the game as a lead programmer and shader programmer in a four-member team 
+                        for the Game Development and Game Development 2 classes. The development took almost a year of work. 
+                        The game was created in the Unity game engine and written in C#.
                     </p>
                 </div>
                 <div class="icons">
                     <div class="technology">
                         <img src="icons/CSharp.svg" class="technology-icon">
                         <img src="icons/Unity.svg" class="technology-icon">
+                        <img src="icons/HLSL.svg" class="technology-icon">
                     </div>
                     <div class="links">
-                        <a href="https://github.com/Jan-Koblizek/Pathfinding" target="_blank">
+                        <a href="https://github.com/maoap1/magical-pet-shop" target="_blank">
                             <img src="icons/Github.svg" class="link-icon">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.TheTeamBehind.MagicalPetShop" target="_blank">
+                            <img src="icons/PlayStore.svg" class="link-icon">
+                        </a>
+                        <a href="https://the-team-behind.itch.io/magical-pet-shop" target="_blank">
+                            <img src="icons/Itch.svg" class="link-icon">
                         </a>
                     </div>
                 </div>
@@ -191,18 +210,21 @@
             </div>            
 
             <div class="popup" id="LAMAPopup">
-                <h2>Magical Pet Shop</h2>
+                <h2>LARP Management Application</h2>
                 <a class="close" onclick="hideInfo();">&times;</a>
                 <div class="content">
                     <p>
-                        The navigation of groups of units in real time strategy games (RTS) was the topic of my master's thesis.
-                        My algorithm created a flow network over the map and found alternative paths for the subgroups of units in there.
-                        This enabled it to more effectively utilize alternative paths.
+                        LARP Management Application (LAMA) is a software intended to simplify the organization of live-action role-playing events (LARPs). 
+                        It simplifies communication between the event organizers and the CPs (character players). 
+                        The organizers can start actions/scenarios and give the CPs all the necessary information. 
+                        They can specify the time and the place of the action, the required equipment, and the types of characters that should be there. 
+                        The application is available both on the desktop and mobile.
                     </p>
 
                     <p>
-                        The algorithm was implemented using C# and the Unity game engine. I created a testing environment, where the 
-                        algorithm can be quickly run on different maps and compared against alternative algorithms.
+                        We worked on the application in a team of four. I focused on the network communication and encryption.
+                        The application was developed for a Software Project course over roughly a year.
+                        The code is written in C#, and we use Xamarin for the front end and SQLite as the database.
                     </p>
                 </div>
                 <div class="icons">
@@ -211,6 +233,9 @@
                         <img src="icons/Unity.svg" class="technology-icon">
                     </div>
                     <div class="links">
+                        <a href="https://github.com/Jan-Koblizek/Pathfinding" target="_blank">
+                            <img src="icons/Github.svg" class="link-icon">
+                        </a>
                         <a href="https://github.com/Jan-Koblizek/Pathfinding" target="_blank">
                             <img src="icons/Github.svg" class="link-icon">
                         </a>
@@ -252,24 +277,35 @@
                 <a class="close" onclick="hideInfo();">&times;</a>
                 <div class="content">
                     <p>
-                        The navigation of groups of units in real time strategy games (RTS) was the topic of my master's thesis.
-                        My algorithm created a flow network over the map and found alternative paths for the subgroups of units in there.
-                        This enabled it to more effectively utilize alternative paths.
+                    Mesopotamia is a 3D hex-based strategy game set in ancient Mesopotamia. 
+                    The player controls 2 settlements they have to defend against an onslaught of the enemy units. 
+                    The player can build buildings, train units, and establish new settlements.
                     </p>
-
                     <p>
-                        The algorithm was implemented using C# and the Unity game engine. I created a testing environment, where the 
-                        algorithm can be quickly run on different maps and compared against alternative algorithms.
+                    I developed the game as homework for the Managed Game Development class.
+                    We were supposed to spend roughly 40 hours, but I spent 150+ hours. 
+                    The game was developed in Unity using C# language.
+                    The ground is editable by the game designer and uses a complex shader, 
+                    which allows it to change its look based on the availability of water in the area. 
+                    It can also display highlights (for places a unit can move to or the settlement’s boundaries).
                     </p>
+                    
                 </div>
                 <div class="icons">
                     <div class="technology">
                         <img src="icons/CSharp.svg" class="technology-icon">
                         <img src="icons/Unity.svg" class="technology-icon">
+                        <img src="icons/HLSL.svg" class="technology-icon">
                     </div>
                     <div class="links">
-                        <a href="https://github.com/Jan-Koblizek/Pathfinding" target="_blank">
-                            <img src="icons/Github.svg" class="link-icon">
+                        <a href="https://www.dropbox.com/scl/fi/ogdr96o2rmz65naoh7hvh/Mesopotamia.zip?rlkey=0x4b268zzq6eec3725aoruftd&dl=0" target="_blank">
+                            <img src="icons/Dropbox.svg" class="link-icon">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=2mGQkXLRlhU&list=PLmJkmOfNDOuRrFN_EhvwUDLBbdBeKHXcL&index=1" target="_blank">
+                            <img src="icons/YouTube.svg" class="link-icon">
+                        </a>
+                        <a href="https://koblizekjan.itch.io/mesopotamia" target="_blank">
+                            <img src="icons/Itch.svg" class="link-icon">
                         </a>
                     </div>
                 </div>
@@ -312,14 +348,17 @@
                 <a class="close" onclick="hideInfo();">&times;</a>
                 <div class="content">
                     <p>
-                        The navigation of groups of units in real time strategy games (RTS) was the topic of my master's thesis.
-                        My algorithm created a flow network over the map and found alternative paths for the subgroups of units in there.
-                        This enabled it to more effectively utilize alternative paths.
+                        Conspiracy Madness is a 2D platformer game where players go through increasingly difficult levels. 
+                        They have to avoid the 5G signal and the chemical-infested waters that turn the freaking frogs gay. 
+                        They are challenged by the vampiric British King Charles. 
+                        Players must dodge the shots of the Muslim Brotherhood member B. Hussein Obama 
+                        and be careful not to get blown off their path by the HAARP.
                     </p>
 
                     <p>
-                        The algorithm was implemented using C# and the Unity game engine. I created a testing environment, where the 
-                        algorithm can be quickly run on different maps and compared against alternative algorithms.
+                        I created the game with some help from my siblings for the GDS Jam 2020 in 48 hours (without much sleep) 
+                        but narrowly missed the deadline. The game is available as free-to-play on Newgrounds. 
+                        It is somewhat rough around the edges because of the short deadline and the lack of sleep.
                     </p>
                 </div>
                 <div class="icons">
@@ -328,8 +367,8 @@
                         <img src="icons/Unity.svg" class="technology-icon">
                     </div>
                     <div class="links">
-                        <a href="https://github.com/Jan-Koblizek/Pathfinding" target="_blank">
-                            <img src="icons/Github.svg" class="link-icon">
+                        <a href="https://www.newgrounds.com/portal/view/774622" target="_blank">
+                            <img src="icons/NewGrounds.png" class="link-icon">
                         </a>
                     </div>
                 </div>
@@ -360,14 +399,11 @@
                 <a class="close" onclick="hideInfo();">&times;</a>
                 <div class="content">
                     <p>
-                        The navigation of groups of units in real time strategy games (RTS) was the topic of my master's thesis.
-                        My algorithm created a flow network over the map and found alternative paths for the subgroups of units in there.
-                        This enabled it to more effectively utilize alternative paths.
-                    </p>
-
-                    <p>
-                        The algorithm was implemented using C# and the Unity game engine. I created a testing environment, where the 
-                        algorithm can be quickly run on different maps and compared against alternative algorithms.
+                        An HLSL shader that mimics the look of flowing water. 
+                        The shader is inspired by the one created by the <a href="https://catlikecoding.com/unity/tutorials/flow/">Catlike Coding</a>. 
+                        The water is able to mimic the light absorption and refraction. 
+                        The reflections are done in screen space. 
+                        The shader also generates foam at the places where the water intersects with the geometry.
                     </p>
                 </div>
                 <div class="icons">
@@ -415,14 +451,11 @@
                 <a class="close" onclick="hideInfo();">&times;</a>
                 <div class="content">
                     <p>
-                        The navigation of groups of units in real time strategy games (RTS) was the topic of my master's thesis.
-                        My algorithm created a flow network over the map and found alternative paths for the subgroups of units in there.
-                        This enabled it to more effectively utilize alternative paths.
-                    </p>
-
-                    <p>
-                        The algorithm was implemented using C# and the Unity game engine. I created a testing environment, where the 
-                        algorithm can be quickly run on different maps and compared against alternative algorithms.
+                        A small and simple RTS game I created during my bachelor’s degree as a credit project for a C# course. 
+                        The player can recruit workers to mine resources and soldiers to fight the enemy. 
+                        They can also construct buildings on the map. 
+                        The enemy can do the same in his village. 
+                        The game was created relatively quickly (in roughly 10 days) and is somewhat buggy regarding the unit navigation and the enemy AI.
                     </p>
                 </div>
                 <div class="icons">
@@ -457,7 +490,7 @@
                     i
                 </div>
                 <div class="gallery"
-                    data-galleryImages="img/RTSStart.jpg;img/RTSFirstFight.jpg;img/RTSMine.jpg;img/RTSRaiding.jpg;img/RTSSiege.jpg"
+                    data-galleryImages="img/MDStart.jpg;img/MDBuildings.jpg;img/MDMartians.jpg"
                     onclick="showSlide(1, this);">
                     <svg viewBox="-2 -2 28 28">
                         <path d="M19.363,2.38H4.637A2.259,2.259,0,0,0,2.38,4.637V19.363A2.259,2.259,0,0,0,4.637,21.62H19.363a2.259,2.259,0,0,0,2.257-2.257V4.637A2.259,2.259,0,0,0,19.363,2.38Zm1.226,16.983a1.227,1.227,0,0,1-1.226,1.226H4.637a1.227,1.227,0,0,1-1.226-1.226V17.739H20.589Zm0-2.654H3.411V4.637A1.227,1.227,0,0,1,4.637,3.411H19.363a1.227,1.227,0,0,1,1.226,1.226Z"/><path d="M15.413,8.111a.516.516,0,0,0-.791-.078l-3.011,2.984L9.381,9.283a.514.514,0,0,0-.7.064L4.9,13.6a.516.516,0,0,0,.771.685l3.46-3.891,2.206,1.716a.514.514,0,0,0,.679-.041L14.906,9.2l3.383,5.025a.515.515,0,1,0,.855-.576Z"/>
@@ -471,14 +504,11 @@
                 <a class="close" onclick="hideInfo();">&times;</a>
                 <div class="content">
                     <p>
-                        The navigation of groups of units in real time strategy games (RTS) was the topic of my master's thesis.
-                        My algorithm created a flow network over the map and found alternative paths for the subgroups of units in there.
-                        This enabled it to more effectively utilize alternative paths.
-                    </p>
-
-                    <p>
-                        The algorithm was implemented using C# and the Unity game engine. I created a testing environment, where the 
-                        algorithm can be quickly run on different maps and compared against alternative algorithms.
+                        The Martian Defense is a small tower defense / RTS game I created for the GDS Jam 2020 in 48 hours.
+                        The player controls a mining station on Mars. 
+                        They must build mining stations and connect them to the power grid (with the center in the headquarters). 
+                        The problem is that hostile Martians inhabit the planet and will try to attack the station. 
+                        To defend against these attacks, the player can build towers that will shoot at the incoming Martians.
                     </p>
                 </div>
                 <div class="icons">
@@ -487,8 +517,8 @@
                         <img src="icons/Unity.svg" class="technology-icon">
                     </div>
                     <div class="links">
-                        <a href="https://github.com/Jan-Koblizek/Pathfinding" target="_blank">
-                            <img src="icons/Github.svg" class="link-icon">
+                        <a href="https://koblizekjan.itch.io/martian-defense" target="_blank">
+                            <img src="icons/Itch.svg" class="link-icon">
                         </a>
                     </div>
                 </div>
