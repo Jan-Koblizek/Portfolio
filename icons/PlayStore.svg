@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   viewBox="0 0 333333 333333"
+   viewBox="0 0 222222.01 222222.01"
    shape-rendering="geometricPrecision"
    text-rendering="geometricPrecision"
    image-rendering="optimizeQuality"
@@ -10,6 +10,8 @@
    id="svg5578"
    sodipodi:docname="PlayStore.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   width="3333.3301"
+   height="3333.3301"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.01"
-     inkscape:cx="177350"
-     inkscape:cy="160450"
+     inkscape:zoom="0.22627417"
+     inkscape:cx="1557.8446"
+     inkscape:cy="1606.4582"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -41,7 +43,8 @@
        x1="161434"
        y1="81394.5"
        x2="161434"
-       y2="160649">
+       y2="160649"
+       gradientTransform="translate(-57708.333,-56113.156)">
       <stop
          offset="0"
          stop-color="#0ad778"
@@ -57,7 +60,8 @@
        x1="157388"
        y1="171418"
        x2="157388"
-       y2="242609">
+       y2="242609"
+       gradientTransform="translate(-57708.333,-56113.156)">
       <stop
          offset="0"
          stop-color="#fe3e4a"
@@ -73,7 +77,8 @@
        x1="194461"
        y1="166716"
        x2="244828"
-       y2="166716">
+       y2="166716"
+       gradientTransform="translate(-57708.333,-56113.156)">
       <stop
          offset="0"
          stop-color="#febe00"
@@ -89,7 +94,8 @@
        x1="141807"
        y1="118463"
        x2="141807"
-       y2="209850">
+       y2="209850"
+       gradientTransform="translate(-57708.333,-56113.156)">
       <stop
          offset="0"
          stop-color="#02c4ff"
@@ -101,19 +107,23 @@
     </linearGradient>
   </defs>
   <path
-     d="M110032 80796c154-10 310-17 467-21 6696-190 10194 2815 15681 6048l86657 50027-27216 24607-75589-80661z"
+     d="m 52323.667,24682.844 c 154,-10 310,-17 467,-21 6696,-190 10194,2815 15681,6048 l 86657.003,50027 -27216,24606.996 z"
      fill="url(#a)"
-     id="path5570" />
+     id="path5570"
+     style="fill:url(#a)" />
   <path
-     d="M110737 81034l74878 80344-83611 87396c-536-635-1005-1338-1410-2099-2594-4883-1867-12399-1867-17910V103729c0-3690-274-8131 333-11979 853-5400 8596-12211 11676-10716z"
+     d="m 53028.667,24920.844 74878.003,80343.996 -83611.003,87396 c -536,-635 -1005,-1338 -1410,-2099 -2594,-4883 -1867,-12399 -1867,-17910 V 47615.844 c 0,-3690 -274,-8131 333,-11979 853,-5400 8596,-12211 11676,-10716 z"
      fill="url(#b)"
-     id="path5572" />
+     id="path5572"
+     style="fill:url(#b)" />
   <path
-     d="M212794 196585l-91554 53088c-3021 1752-4489 2488-8117 2893-753 84-10443-3762-11140-3769l83631-87418 27180 35206z"
+     d="m 155085.67,140471.84 -91554.003,53088 c -3021,1752 -4489,2488 -8117,2893 -753,84 -10443,-3762 -11140,-3769 l 83631.003,-87418 z"
      fill="url(#c)"
-     id="path5574" />
+     id="path5574"
+     style="fill:url(#c)" />
   <path
-     d="M212808 136832l26703 15419c3685 2128 6878 3689 9650 7091 4514 5542 3926 11894-2579 17242-2874 2363-6755 4326-10000 6207l-23863 13808-27107-35222 27196-24545z"
+     d="m 155099.67,80718.844 26703,15418.997 c 3685,2128 6878,3689 9650,7090.999 4514,5542 3926,11894 -2579,17242 -2874,2363 -6755,4326 -10000,6207 l -23863,13808 -27107,-35222 z"
      fill="url(#d)"
-     id="path5576" />
+     id="path5576"
+     style="fill:url(#d)" />
 </svg>
