@@ -5,6 +5,7 @@
     --lighter-background-color: #343449;
     --lightest-background-color: #8989A7;
     --highlight-color: #00aede;
+    --highlight-color2: #007eae;
     --secondary-color: #FAC748;
 
 
@@ -44,35 +45,12 @@ h1 {
     text-shadow: 0px 0px 25px var(--highlight-color), 0px 0px 15px var(--highlight-color), 0px 0px 5px white;
     font-family: var(--header-font);
     font-weight: var(--header-font-weight);
-    /*-webkit-box-reflect: below -20px linear-gradient(to top, rgba(0, 0, 0, .35), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);*/
 }
-
-/*
-h1::before {
-    content: "";
-    position: relative;
-    right: 50px;
-    height: 48px;
-    padding-left: 5000px;
-    margin-left: -5000px;
-    background-color: var(--secondary-color);
-}
-
-h1::after {
-    content: "";
-    position: relative;
-    left: 50px;
-    height: 48px;
-    padding-left: 5000px;
-    margin-right: -5000px;
-    background-color: var(--secondary-color);
-}
-*/
 
 h2 {
     color: var(--text-color);
     font-size: 32px;
-    margin: 5px 0px;
+    margin: 5px 0px 5px 10px;
     text-transform: uppercase;
     text-align: center;
     text-shadow: 0px 0px 25px var(--highlight-color), 0px 0px 15px var(--highlight-color), 0px 0px 5px white;
@@ -138,7 +116,6 @@ h2 {
     border-spacing: 0px;
     border-radius: 0px 0px var(--card-corner-radius) var(--card-corner-radius);
     border-top: 2px solid var(--secondary-color);
-    /*border-bottom: 2px solid var(--secondary-color);*/
 }
 
 tr
@@ -199,11 +176,25 @@ td
     font-size: 42px;
     color: var(--text-color);
     box-shadow: 0px 0px 10px black;
+    animation: infoAnimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 500ms;
+}
+
+@keyframes infoAnimation {
+    from {
+        background-color: var(--highlight-color);  
+    }
+    to {
+        background-color: var(--highlight-color2);   
+    }
 }
 
 .info:hover {
     background-color: white;
     color: var(--lighter-background-color);
+    animation: none;
 }
 
 #overlay {
@@ -285,6 +276,23 @@ td
 .technology-icon {
     margin: 10px 10px 0px 0px;
     height: 32px;
+}
+
+.technology-icon-card {
+    margin: 0px 5px 0px 5px;
+    height: 32px;
+}
+
+.technology-card {
+    position: absolute;
+    left: 2px;
+    top: 54px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 4px;
+    background-color: var(--lighter-background-color);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .links {
